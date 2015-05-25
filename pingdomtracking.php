@@ -27,8 +27,9 @@ class plgSystemPingdomTracking extends JPlugin
 				p.src = '//rum-static.pingdom.net/prum.min.js';
 				s.parentNode.insertBefore(p, s);
 			})();				
-			<!-- Website Active -->
 			";
+			$doc->setMetadata("pingdom", "Website Active"); 
+			//die();
 			$doc->addScriptDeclaration($loadAnalytics);
 		}
 	}
