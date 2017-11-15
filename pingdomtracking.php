@@ -8,10 +8,6 @@ class plgSystemPingdomTracking extends JPlugin
 	function __construct(&$subject, $config) {
 		parent::__construct($subject, $config);
 	}
-	function onAfterInitialise()	{
-		//die($trackingid);
-		
-	}
 	function onBeforeCompileHead()	{
 		$doc 		= JFactory::getDocument();
 		$mainframe 	= JFactory::getApplication();
